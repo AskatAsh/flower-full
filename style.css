@@ -54,3 +54,7 @@ header {
     font-style: normal;
     font-weight: 700;
 }
+/* spacing between sections */
+.spacer{
+    height: 130px;
+}
