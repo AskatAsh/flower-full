@@ -177,3 +177,21 @@ input[type="email"]{
 .deals .search button{
     margin-left: 10px;
 }
+/* footer section */
+footer{
+    height: 450px;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    background-color: #272727;
+}
+footer>p{
+    margin-bottom: 20px;
+}
+.shop-name{
+    font-size: 48px;
+    font-weight: bold;
+}
+.shop-name>span{
+    color: #E55473;
+}
