@@ -151,3 +151,29 @@ button {
     margin-bottom: 32px;
 }
 /* Social media section starts here */
+
+/* Latest deals section starts here */
+input[type="email"]{
+    width: 700px;
+    height: 64px;
+    background-color: white;
+    border: none;
+    padding: 20px;
+}
+.deals{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./images/Rectangle\ 9.png');
+}
+.deals > h2{
+    margin-bottom: 24px;
+}
+.deals > p{
+    margin-bottom: 24px;
+}
+.deals .search button{
+    margin-left: 10px;
+}
