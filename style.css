@@ -120,7 +120,7 @@ header {
     justify-content: space-around;
     background: #2727270D;
 }
-.services > .offer >img{
+.services > .service >img{
     display: block;
     margin: 0 auto;
     margin-bottom: 24px;
