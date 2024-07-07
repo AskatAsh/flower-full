@@ -72,7 +72,7 @@ header {
 /* Responsive design of header section */
 @media screen and (max-width: 1024px) {
     .landing {
-        max-height: 600px;
+        min-height: 700px;
     }
     .landing>.info>h1 {
         font-size: 5vw;
