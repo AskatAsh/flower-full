@@ -1,64 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 /* Header section starts here */
 header {
-    background-color: #E554731A;
-    /* width: 1920px; */
+    background-color: #e554731a;
 }
 
 .container {
-    width: 1440px;
+    max-width: 1440px;
+    width: 90%;
     margin: 0 auto;
 }
 
 .landing {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    max-height: 800px;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .landing>.info {
-    width: 708px;
+    max-width: 50%;
+    width: 100%;
 }
 
 .landing>.info>h1 {
-    font-size: 80px;
+    font-size: 4.5rem;
     font-weight: 800;
-    margin-bottom: 32px;
+    line-height: 1.2;
 }
 
 .landing>.info>p {
-    font-size: 18px;
-    margin-bottom: 32px;
-    line-height: 1.8rem;
+    font-size: 1.35rem;
+    margin: 2rem 0;
+    line-height: 1.5;
 }
 
-.landing>.info>img {
-    width: 635px;
-}
-
-button {
-    padding: 20px 43px;
+.landing>.info>button {
+    padding: 1rem 2rem;
     border: none;
     border-radius: 8px;
-    background: #E55473;
-    color: #FFF;
+    background: #e55473;
+    color: #fff;
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
     cursor: pointer;
 }
 
+.head-image {
+    height: 100%;
+    max-width: 50%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.head-image>img {
+    object-fit: cover;
+    max-width: 600px;
+    width: 100%;
+}
+/* Responsive design of header section */
+@media screen and (max-width: 1024px) {
+    .landing {
+        max-height: 600px;
+    }
+    .landing>.info>h1 {
+        font-size: 5vw;
+    }
+    .landing>.info>p {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .landing {
+        flex-direction: column-reverse;
+        max-height: 1200px;
+        height: 100%;
+        gap: 2rem;
+        padding: 5rem 0;
+    }
+    .landing>.info{
+        max-width: 80%;
+    }
+    .head-image{
+        max-width: 80%;
+    }
+    .landing>.info>h1 {
+        font-size: 2rem;
+    }
+}
+
+
 /* spacing between sections */
 .spacer {
-    height: 130px;
+    height: 5rem;
+    background-color: aquamarine;
 }
 
 /* Featured section starts here */
@@ -98,100 +144,117 @@ button {
 }
 
 .featured>.featured-images>.img>.flower-2 {
-    background: #0597A026;
+    background: #0597a026;
     justify-content: center;
 }
 
 .img>.flower-3 {
-    background: #477D1126;
+    background: #477d1126;
 }
-.img>p{
-    margin-top: 24px;
 
+.img>p {
+    margin-top: 24px;
 }
+
 .img>p>a {
     color: #272727;
     font-size: 24px;
 }
+
 /* Services section starts here */
-.services{
+.services {
     height: 329px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: #2727270D;
+    background: #2727270d;
 }
-.services > .service >img{
+
+.services>.service>img {
     display: block;
     margin: 0 auto;
     margin-bottom: 24px;
 }
+
 /* Offers section starts here */
-.offers{
+.offers {
     height: 620px;
-    background: #E554730D;
+    background: #e554730d;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.offer{
+
+.offer {
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
     width: 594px;
 }
-.offer > h2{
+
+.offer>h2 {
     margin-bottom: 24px;
 }
-.offer > h2 > span{
-    color: #E55473;
+
+.offer>h2>span {
+    color: #e55473;
 }
-.offer > p{
+
+.offer>p {
     margin-bottom: 32px;
 }
+
 /* Social media section starts here */
 
 /* Latest deals section starts here */
-input[type="email"]{
+input[type="email"] {
     width: 700px;
     height: 64px;
     background-color: white;
     border: none;
     padding: 20px;
 }
-.deals{
+
+.deals {
     height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('./images/Rectangle\ 9.png');
+    background-image: url("./images/Rectangle\ 9.png");
 }
-.deals > h2{
+
+.deals>h2 {
     margin-bottom: 24px;
 }
-.deals > p{
+
+.deals>p {
     margin-bottom: 24px;
 }
-.deals .search button{
+
+.deals .search button {
     margin-left: 10px;
 }
+
 /* footer section */
-footer{
+footer {
     height: 450px;
     text-align: center;
     padding-top: 100px;
     color: white;
     background-color: #272727;
 }
-footer>p{
+
+footer>p {
     margin-bottom: 20px;
 }
-.shop-name{
+
+.shop-name {
     font-size: 48px;
     font-weight: bold;
 }
-.shop-name>span{
-    color: #E55473;
+
+.shop-name>span {
+    color: #e55473;
 }
